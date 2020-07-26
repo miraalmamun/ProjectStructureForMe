@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite C">
+	<listeners>
+		<listener class-name="listener.CustomListener" />
+	</listeners>
+
+
+	<test thread-count="5" name="Test C1">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="suiteC.TestC" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test C2">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="suiteC.TestC" />
+		</classes>
+	</test>
+
+
+
+	<test thread-count="5" name="Test CC1">
+		<parameter name="browser" value="mozila" />
+		<classes>
+			<class name="suiteC.TestCC" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test CC2">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="suiteC.TestCC" />
+		</classes>
+	</test>
+
+
+</suite> 

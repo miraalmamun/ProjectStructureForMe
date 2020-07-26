@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG2">
+
+	<groups>
+		<run>
+			<include name="smoke" />
+		</run>
+	</groups>
+
+	<parameter name="browsers" value="chrome,ie" />
+	<parameter name="browser" value="chrome" />
+	<parameter name="browserGroup1" value="chrome-TestNG2" />
+	<parameter name="browserGroup2" value="ie-TestNG2" />
+	<parameter name="browserGroup3" value="firefox-TestNG2" />
+
+	<listeners>
+		<listener class-name="listener.CustomListener" />
+	</listeners>
+
+	<suite-files>
+		<suite-file path="suiteA.xml"></suite-file>
+		<suite-file path="suiteB.xml"></suite-file>
+		<suite-file path="suiteC.xml"></suite-file>
+	</suite-files>
+
+
+
+</suite>

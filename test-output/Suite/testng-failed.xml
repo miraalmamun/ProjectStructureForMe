@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listener.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="Test AB(failed)">
+    <classes>
+      <class name="suiteA.TestA">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testA"/>
+        </methods>
+      </class> <!-- suiteA.TestA -->
+      <class name="suiteA.TestAA">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testAA"/>
+        </methods>
+      </class> <!-- suiteA.TestAA -->
+      <class name="suiteB.TestB">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testB"/>
+        </methods>
+      </class> <!-- suiteB.TestB -->
+    </classes>
+  </test> <!-- Test AB(failed) -->
+  <test thread-count="5" name="Test BC(failed)">
+    <classes>
+      <class name="suiteC.TestC">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testC"/>
+        </methods>
+      </class> <!-- suiteC.TestC -->
+      <class name="suiteC.TestCC">
+        <methods>
+          <include name="quit"/>
+          <include name="testCC"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- suiteC.TestCC -->
+      <class name="suiteB.TestBB">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testBB"/>
+        </methods>
+      </class> <!-- suiteB.TestBB -->
+    </classes>
+  </test> <!-- Test BC(failed) -->
+</suite> <!-- Failed suite [Suite] -->

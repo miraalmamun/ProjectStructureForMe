@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite B">
+	<groups>
+		<run>
+			<include name="smoke" />
+		</run>
+	</groups>
+	<parameter name="browser" value="chrome" />
+	<listeners>
+		<listener class-name="listener.CustomListener" />
+	</listeners>
+	<test thread-count="5" name="Test B">
+		<classes>
+
+			<class name="suiteB.TestB" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test BB">
+		<classes>
+			<class name="suiteB.TestBB" />
+
+		</classes>
+	</test>
+
+
+</suite> 

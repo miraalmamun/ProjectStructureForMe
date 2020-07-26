@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite-Booking]">
+  <test thread-count="5" name="Booking(failed)">
+    <classes>
+      <class name="note.Booking">
+        <methods>
+          <include name="confirm"/>
+          <include name="select"/>
+          <include name="search"/>
+          <include name="checkout"/>
+        </methods>
+      </class> <!-- note.Booking -->
+    </classes>
+  </test> <!-- Booking(failed) -->
+</suite> <!-- Failed suite [Suite-Booking] -->

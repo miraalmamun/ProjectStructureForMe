@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite B]">
+  <listeners>
+    <listener class-name="listener.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="Test B(failed)">
+    <classes>
+      <class name="suiteB.TestB">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testB"/>
+        </methods>
+      </class> <!-- suiteB.TestB -->
+    </classes>
+  </test> <!-- Test B(failed) -->
+  <test thread-count="5" name="Test BB(failed)">
+    <classes>
+      <class name="suiteB.TestBB">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testBB"/>
+        </methods>
+      </class> <!-- suiteB.TestBB -->
+    </classes>
+  </test> <!-- Test BB(failed) -->
+</suite> <!-- Failed suite [Suite B] -->

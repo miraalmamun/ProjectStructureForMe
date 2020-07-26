@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite A]">
+  <parameter name="browserGroup3" value="firefox-TestNG2"/>
+  <parameter name="browserGroup1" value="chrome-TestNG2"/>
+  <parameter name="browserGroup2" value="ie-TestNG2"/>
+  <parameter name="browser" value="chrome-suiteA"/>
+  <parameter name="browserGroup1-suiteA" value="chrome-suiteA"/>
+  <parameter name="browsers" value="chrome-suiteA,ie-suiteA"/>
+  <parameter name="browserGroup2-suiteA" value="ie-suiteA"/>
+  <parameter name="browserGroup3-suiteA" value="firefox-suiteA"/>
+  <listeners>
+    <listener class-name="listener.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="Test A(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="suiteA.TestA">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testA" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- suiteA.TestA -->
+    </classes>
+  </test> <!-- Test A(failed) -->
+</suite> <!-- Failed suite [Suite A] -->
