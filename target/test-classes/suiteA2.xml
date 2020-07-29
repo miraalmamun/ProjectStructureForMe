@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CustomerAccount">
+	<listeners>
+		<listener class-name="listener.CustomListener2" />
+	</listeners>
+
+
+	<test name="TestA2-3">
+		<classes>
+			<class name="suiteA.TestA2" />
+			<class name="suiteA.TestA3" />
+		</classes>
+	</test>
+	<test name="TestA4-5">
+		<classes>
+			<class name="suiteA.TestA4" />
+			<class name="suiteA.TestA5" />
+		</classes>
+	</test>
+	<test name="TestAA2-3">
+		<classes>
+			<class name="suiteA.TestAA2" />
+			<class name="suiteA.TestAA3" />
+		</classes>
+	</test>
+	<test name="TestAA4-5">
+		<classes>
+			<class name="suiteA.TestAA4" />
+			<class name="suiteA.TestAA5" />
+		</classes>
+	</test>
+</suite> 

@@ -2,14 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite-Booking">
 	<test thread-count="5" name="Booking">
+	
 		<groups>
 			<dependencies>
 				<group depends-on="search" name="select" />
 				<group depends-on="select" name="checkout" />
 				<group depends-on="checkout" name="confirm" />
 			</dependencies>
-
 		</groups>
+		
 		<classes>
 			<class name="note.Booking" />
 		</classes>
