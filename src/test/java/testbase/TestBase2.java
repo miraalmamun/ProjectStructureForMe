@@ -11,8 +11,7 @@ public class TestBase2 {
 	{
 		Reporter.log("----beforeMethod---- "+result.getMethod().getMethodName(),true);
 		
-		Reporter.log("----beforeMethod---- "+result.getName(),true);
-		Reporter.log("beforeMethod:->" + result.getName(),true);
+		
 		
 	}
 }
