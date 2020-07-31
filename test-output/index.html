@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-CustomerAccount">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CustomerAccount" title="suiteA.TestA2" hash-for-method="testA2_1">testA2_1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CustomerAccount" title="suiteA.TestA2" hash-for-method="testA2_1(ie, 2)">testA2_1(ie, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CustomerAccount" title="suiteA.TestA2" hash-for-method="testA2_1(chrome, 1)">testA2_1(chrome, 1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -126,12 +131,7 @@
                     <div class="method-list-content passed suite-CustomerAccount">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CustomerAccount" title="suiteA.TestA2" hash-for-method="testA2_5(ie, 2)">testA2_5(ie, 2)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CustomerAccount" title="suiteA.TestA2" hash-for-method="testA2_5(chrome, 1)">testA2_5(chrome, 1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CustomerAccount" title="suiteA.TestA2" hash-for-method="testA2_5">testA2_5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -184,12 +184,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testA2_1">
-                  </a> <!-- testA2_1 -->
+                  <a name="testA2_1(ie, 2)">
+                  </a> <!-- testA2_1(ie, 2) -->
                   <span class="method-name">testA2_1</span>
+                  <span class="parameters">(ie, 2)</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	Title does not match
-	at suiteA.TestA2.testA2_1(TestA2.java:33)
+	at suiteA.TestA2.testA2_1(TestA2.java:35)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testA2_1(chrome, 1)">
+                  </a> <!-- testA2_1(chrome, 1) -->
+                  <span class="method-name">testA2_1</span>
+                  <span class="parameters">(chrome, 1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Title does not match
+	at suiteA.TestA2.testA2_1(TestA2.java:35)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -201,8 +215,8 @@
                   <span class="method-name">testA2_2</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	This is a critical error
-	at testbase.TestBase2.failAndStopTest(TestBase2.java:160)
-	at suiteA.TestA2.testA2_2(TestA2.java:46)
+	at testbase.TestBase2.failAndStopTest(TestBase2.java:100)
+	at suiteA.TestA2.testA2_2(TestA2.java:48)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -213,7 +227,7 @@
                   </a> <!-- testA2_6 -->
                   <span class="method-name">testA2_6</span>
                   <div class="stack-trace">java.lang.AssertionError: Forced to fail
-	at suiteA.TestA2.testA2_6(TestA2.java:86)
+	at suiteA.TestA2.testA2_6(TestA2.java:88)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -278,18 +292,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testA2_5(ie, 2)">
-                  </a> <!-- testA2_5(ie, 2) -->
+                  <a name="testA2_5">
+                  </a> <!-- testA2_5 -->
                   <span class="method-name">testA2_5</span>
-                  <span class="parameters">(ie, 2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testA2_5(chrome, 1)">
-                  </a> <!-- testA2_5(chrome, 1) -->
-                  <span class="method-name">testA2_5</span>
-                  <span class="parameters">(chrome, 1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -517,33 +522,33 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testA2_1')
 data.setCell(0, 2, 'suiteA.TestA2')
-data.setCell(0, 3, 17);
+data.setCell(0, 3, 16);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testA3_4')
-data.setCell(1, 2, 'suiteA.TestA3')
-data.setCell(1, 3, 5);
+data.setCell(1, 1, 'testA2_2')
+data.setCell(1, 2, 'suiteA.TestA2')
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testA2_5')
+data.setCell(2, 1, 'testA2_1')
 data.setCell(2, 2, 'suiteA.TestA2')
-data.setCell(2, 3, 4);
+data.setCell(2, 3, 5);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testA2_5')
 data.setCell(3, 2, 'suiteA.TestA2')
 data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testA3_6')
+data.setCell(4, 1, 'testA3_5')
 data.setCell(4, 2, 'suiteA.TestA3')
-data.setCell(4, 3, 3);
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testA3_5')
+data.setCell(5, 1, 'testA3_6')
 data.setCell(5, 2, 'suiteA.TestA3')
-data.setCell(5, 3, 3);
+data.setCell(5, 3, 2);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testA2_2')
-data.setCell(6, 2, 'suiteA.TestA2')
-data.setCell(6, 3, 3);
+data.setCell(6, 1, 'testA3_2')
+data.setCell(6, 2, 'suiteA.TestA3')
+data.setCell(6, 3, 2);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testA3_1')
+data.setCell(7, 1, 'testA3_4')
 data.setCell(7, 2, 'suiteA.TestA3')
 data.setCell(7, 3, 2);
 data.setCell(8, 0, 8)
@@ -551,7 +556,7 @@ data.setCell(8, 1, 'testA3_3')
 data.setCell(8, 2, 'suiteA.TestA3')
 data.setCell(8, 3, 2);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testA3_2')
+data.setCell(9, 1, 'testA3_1')
 data.setCell(9, 2, 'suiteA.TestA3')
 data.setCell(9, 3, 2);
 data.setCell(10, 0, 10)
@@ -562,7 +567,7 @@ window.suiteTableData['CustomerAccount']= { tableData: data, tableDiv: 'times-di
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 ms</span>
+              <span class="suite-total-time">Total running time: 44 ms</span>
               <div id="times-div-CustomerAccount">
               </div> <!-- times-div-CustomerAccount -->
             </div> <!-- times-div -->
@@ -574,10 +579,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testA3_1</span>
+              <span class="reporter-method-name">testA3_5</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Starting test ->testA3_1</span>
-                <span class="reporter-method-output">Test success :->testA3_1</span>
+                <span class="reporter-method-output">Starting test ->testA3_5</span>
+                <span class="reporter-method-output">Test success :->testA3_5</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testA3_6</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test ->testA3_6</span>
+                <span class="reporter-method-output">Test success :->testA3_6</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testA3_2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test ->testA3_2</span>
+                <span class="reporter-method-output">Test success :->testA3_2</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -588,18 +607,9 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testA2_5(ie, 2)</span>
+              <span class="reporter-method-name">testA2_5</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Starting test ->testA2_5</span>
-                <span class="reporter-method-output">Browser: ie / number: 2</span>
-                <span class="reporter-method-output">Test success :->testA2_5</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testA2_5(chrome, 1)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Starting test ->testA2_5</span>
-                <span class="reporter-method-output">Browser: chrome / number: 1</span>
                 <span class="reporter-method-output">Test success :->testA2_5</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -611,24 +621,51 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testA3_2</span>
+              <span class="reporter-method-name">testA3_1</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Starting test ->testA3_2</span>
-                <span class="reporter-method-output">Test success :->testA3_2</span>
+                <span class="reporter-method-output">Starting test ->testA3_1</span>
+                <span class="reporter-method-output">Test success :->testA3_1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testA3_6</span>
+              <span class="reporter-method-name">testA2_1(ie, 2)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Starting test ->testA3_6</span>
-                <span class="reporter-method-output">Test success :->testA3_6</span>
+                <span class="reporter-method-output">Starting test ->testA2_1</span>
+                <span class="reporter-method-output">Broser Name: ie and Number: 2</span>
+                <span class="reporter-method-output">Title does not match</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">Expected value and Actual value same</span>
+                <span class="reporter-method-output">Test Failed :->testA2_1</span>
+                <span class="reporter-method-output">Failed Cause-->The following asserts failed:
+	Title does not match</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">testA3_5</span>
+              <span class="reporter-method-name">testA2_6</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Starting test ->testA3_5</span>
-                <span class="reporter-method-output">Test success :->testA3_5</span>
+                <span class="reporter-method-output">Starting test ->testA2_6</span>
+                <span class="reporter-method-output">----testA2_6 in method----</span>
+                <span class="reporter-method-output">Test Failed :->testA2_6</span>
+                <span class="reporter-method-output">Failed Cause-->Forced to fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testA2_1(chrome, 1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test ->testA2_1</span>
+                <span class="reporter-method-output">Broser Name: chrome and Number: 1</span>
+                <span class="reporter-method-output">Title does not match</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">one line of code here</span>
+                <span class="reporter-method-output">Expected value and Actual value same</span>
+                <span class="reporter-method-output">Test Failed :->testA2_1</span>
+                <span class="reporter-method-output">Failed Cause-->The following asserts failed:
+	Title does not match</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -643,30 +680,6 @@ return data;
                 <span class="reporter-method-output">Test Failed :->testA2_2</span>
                 <span class="reporter-method-output">Failed Cause-->The following asserts failed:
 	This is a critical error</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testA2_6</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Starting test ->testA2_6</span>
-                <span class="reporter-method-output">----testA2_6 in method----</span>
-                <span class="reporter-method-output">Test Failed :->testA2_6</span>
-                <span class="reporter-method-output">Failed Cause-->Forced to fail</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testA2_1</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Starting test ->testA2_1</span>
-                <span class="reporter-method-output">Title does not match</span>
-                <span class="reporter-method-output">one line of code here</span>
-                <span class="reporter-method-output">one line of code here</span>
-                <span class="reporter-method-output">one line of code here</span>
-                <span class="reporter-method-output">one line of code here</span>
-                <span class="reporter-method-output">Expected value and Actual value same</span>
-                <span class="reporter-method-output">Test Failed :->testA2_1</span>
-                <span class="reporter-method-output">Failed Cause-->The following asserts failed:
-	Title does not match</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -791,145 +804,147 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">suiteA.TestA2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name=testA2_1 status=FAILURE method=TestA2.testA2_1()[pri:0, instance:suiteA.TestA2@4bec...)</span>
+                <span class="method-name">beforeMethod([TestResult name=testA2_1 status=FAILURE method=TestA2.testA2_1(java.lang.String, int)[pri:0, instan...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testA2_1</span>
-                <span class="method-start">257 ms</span>
+                <span class="method-name">testA2_1(chrome, 1)</span>
+                <span class="method-start">246 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">280 ms</span>
+                <span class="method-start">268 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name=testA2_1 status=FAILURE method=TestA2.testA2_1(java.lang.String, int)[pri:0, instan...)</span>
+                <span class="method-start">758 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testA2_1(ie, 2)</span>
+                <span class="method-start">759 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">774 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name=testA2_2 status=FAILURE method=TestA2.testA2_2()[pri:0, instance:suiteA.TestA2@4bec...)</span>
-                <span class="method-start">780 ms</span>
+                <span class="method-start">794 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testA2_2</span>
-                <span class="method-start">782 ms</span>
+                <span class="method-start">795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">792 ms</span>
+                <span class="method-start">806 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name=testA2_5 status=SUCCESS method=TestA2.testA2_5(java.lang.String, int)[pri:0, instan...)</span>
-                <span class="method-start">821 ms</span>
+                <span class="method-name">beforeMethod([TestResult name=testA2_5 status=SUCCESS method=TestA2.testA2_5()[pri:0, instance:suiteA.TestA2@4bec...)</span>
+                <span class="method-start">831 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testA2_5(chrome, 1)</span>
-                <span class="method-start">822 ms</span>
+                <span class="method-name">testA2_5</span>
+                <span class="method-start">831 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">829 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name=testA2_5 status=SUCCESS method=TestA2.testA2_5(java.lang.String, int)[pri:0, instan...)</span>
-                <span class="method-start">854 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testA2_5(ie, 2)</span>
-                <span class="method-start">855 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">865 ms</span>
+                <span class="method-start">837 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name=testA2_6 status=FAILURE method=TestA2.testA2_6()[pri:0, instance:suiteA.TestA2@4bec...)</span>
-                <span class="method-start">876 ms</span>
+                <span class="method-start">852 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testA2_6</span>
-                <span class="method-start">877 ms</span>
+                <span class="method-start">852 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">884 ms</span>
+                <span class="method-start">858 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">suiteA.TestA3</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name=testA3_1 status=SUCCESS method=TestA3.testA3_1()[pri:0, instance:suiteA.TestA3@29ca...)</span>
-                <span class="method-start">903 ms</span>
+                <span class="method-start">881 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA3_1</span>
-                <span class="method-start">904 ms</span>
+                <span class="method-start">881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">884 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name=testA3_2 status=SUCCESS method=TestA3.testA3_2()[pri:0, instance:suiteA.TestA3@29ca...)</span>
+                <span class="method-start">905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testA3_2</span>
+                <span class="method-start">905 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
                 <span class="method-start">908 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name=testA3_2 status=SUCCESS method=TestA3.testA3_2()[pri:0, instance:suiteA.TestA3@29ca...)</span>
-                <span class="method-start">988 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testA3_2</span>
-                <span class="method-start">989 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">993 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name=testA3_3 status=SUCCESS method=TestA3.testA3_3()[pri:0, instance:suiteA.TestA3@29ca...)</span>
-                <span class="method-start">1006 ms</span>
+                <span class="method-start">926 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA3_3</span>
-                <span class="method-start">1007 ms</span>
+                <span class="method-start">926 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">1011 ms</span>
+                <span class="method-start">929 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name=testA3_4 status=SUCCESS method=TestA3.testA3_4()[pri:0, instance:suiteA.TestA3@29ca...)</span>
-                <span class="method-start">1034 ms</span>
+                <span class="method-start">952 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA3_4</span>
-                <span class="method-start">1037 ms</span>
+                <span class="method-start">953 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">1045 ms</span>
+                <span class="method-start">960 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name=testA3_5 status=SUCCESS method=TestA3.testA3_5()[pri:0, instance:suiteA.TestA3@29ca...)</span>
-                <span class="method-start">1073 ms</span>
+                <span class="method-start">979 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA3_5</span>
-                <span class="method-start">1074 ms</span>
+                <span class="method-start">980 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">1088 ms</span>
+                <span class="method-start">986 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name=testA3_6 status=SUCCESS method=TestA3.testA3_6()[pri:0, instance:suiteA.TestA3@29ca...)</span>
-                <span class="method-start">1132 ms</span>
+                <span class="method-start">1011 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA3_6</span>
-                <span class="method-start">1137 ms</span>
+                <span class="method-start">1012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">1145 ms</span>
+                <span class="method-start">1018 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

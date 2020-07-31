@@ -20,7 +20,7 @@
           <include name="beforeMethod"/>
           <include name="testA2_2"/>
           <include name="afterMethod"/>
-          <include name="testA2_1"/>
+          <include name="testA2_1" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- suiteA.TestA2 -->
     </classes>

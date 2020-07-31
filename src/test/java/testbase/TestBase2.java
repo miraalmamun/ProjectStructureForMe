@@ -26,14 +26,10 @@ public class TestBase2 {
 	@BeforeMethod(alwaysRun = true)
 	public void beforeMethod(ITestResult result, ITestContext con) {
 
-		System.out.println("--------------------------------------------------------------beforeMethod---- ");
-
 		softAssert = new SoftAssert();
 
 		reports = ExtentManager.getReports();
 		test = reports.createTest(result.getMethod().getMethodName().toUpperCase());
-
-		// ================================================================
 
 		result.setAttribute("reports", test);
 
@@ -59,44 +55,20 @@ public class TestBase2 {
 
 		for (int i = 0; i < list.size(); i++) {
 
-			 browser = con.getCurrentXmlTest().getParameter(list.get(i));
+			browser = con.getCurrentXmlTest().getParameter(list.get(i));
 
 			if (browser.equals("safari")) {
-				System.out.println("safari");
+				
 			} else if (browser.equals("mozila")) {
-				System.out.println("mozila");
+				
 			} else {
 				logInfo("Browser does not exist");
 			}
 
 		}
 
-		
-		System.out.println("--------------------------------------------------beforeMethod end---- ");
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	@AfterMethod(alwaysRun = true)
 	public void afterMethod() {
 

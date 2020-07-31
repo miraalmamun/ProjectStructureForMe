@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestA2-3</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 30 19:33:06 EDT 2020</td>
+<td>Started on:</td><td>Thu Jul 30 23:52:49 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1199 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1100 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke </td>
 </tr><tr>
@@ -75,12 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='suiteA.TestA2.testA2_1()'><b>testA2_1</b><br>Test class: suiteA.TestA2<br/>
-<a href="#Output-1493625803" onClick='toggleBox("Output-1493625803", this, "Show output", "Hide output");'>Show output</a>
+<td title='suiteA.TestA2.testA2_1()'><b>testA2_1</b><br>Test class: suiteA.TestA2<br>Parameters: chrome, 1<br/>
+<a href="#Output-1702660825" onClick='toggleBox("Output-1702660825", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1493625803" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1493625803">
+<a href="#Output-1702660825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1702660825">
 Starting test ->testA2_1<br/>
+Broser Name: chrome and Number: 1<br/>
 Title does not match<br/>
 one line of code here<br/>
 one line of code here<br/>
@@ -94,12 +95,67 @@ Failed Cause-->The following asserts failed:
 </td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	Title does not match
-	at suiteA.TestA2.testA2_1(TestA2.java:33)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1493625803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1493625803'><pre>java.lang.AssertionError: The following asserts failed:
+	at suiteA.TestA2.testA2_1(TestA2.java:35)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1702660825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1702660825'><pre>java.lang.AssertionError: The following asserts failed:
 	Title does not match
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at suiteA.TestA2.testA2_1(TestA2.java:33)
+	at suiteA.TestA2.testA2_1(TestA2.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>suiteA.TestA2@4bec1f0c</td></tr>
+<tr>
+<td title='suiteA.TestA2.testA2_1()'><b>testA2_1</b><br>Test class: suiteA.TestA2<br>Parameters: ie, 2<br/>
+<a href="#Output-1047460013" onClick='toggleBox("Output-1047460013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1047460013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1047460013">
+Starting test ->testA2_1<br/>
+Broser Name: ie and Number: 2<br/>
+Title does not match<br/>
+one line of code here<br/>
+one line of code here<br/>
+one line of code here<br/>
+one line of code here<br/>
+Expected value and Actual value same<br/>
+Test Failed :->testA2_1<br/>
+Failed Cause-->The following asserts failed:
+	Title does not match<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Title does not match
+	at suiteA.TestA2.testA2_1(TestA2.java:35)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1047460013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1047460013'><pre>java.lang.AssertionError: The following asserts failed:
+	Title does not match
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at suiteA.TestA2.testA2_1(TestA2.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,10 +186,10 @@ Failed Cause-->The following asserts failed:
 <td>suiteA.TestA2@4bec1f0c</td></tr>
 <tr>
 <td title='suiteA.TestA2.testA2_2()'><b>testA2_2</b><br>Test class: suiteA.TestA2<br/>
-<a href="#Output-773989906" onClick='toggleBox("Output-773989906", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-926434463" onClick='toggleBox("Output-926434463", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-773989906" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-773989906">
+<a href="#Output-926434463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-926434463">
 Starting test ->testA2_2<br/>
 one line of code here<br/>
 one line of code here<br/>
@@ -147,14 +203,14 @@ Failed Cause-->The following asserts failed:
 </td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	This is a critical error
-	at testbase.TestBase2.failAndStopTest(TestBase2.java:160)
-	at suiteA.TestA2.testA2_2(TestA2.java:46)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace773989906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace773989906'><pre>java.lang.AssertionError: The following asserts failed:
+	at testbase.TestBase2.failAndStopTest(TestBase2.java:100)
+	at suiteA.TestA2.testA2_2(TestA2.java:48)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace926434463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace926434463'><pre>java.lang.AssertionError: The following asserts failed:
 	This is a critical error
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at testbase.TestBase2.failAndStopTest(TestBase2.java:160)
-	at suiteA.TestA2.testA2_2(TestA2.java:46)
+	at testbase.TestBase2.failAndStopTest(TestBase2.java:100)
+	at suiteA.TestA2.testA2_2(TestA2.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -185,10 +241,10 @@ Failed Cause-->The following asserts failed:
 <td>suiteA.TestA2@4bec1f0c</td></tr>
 <tr>
 <td title='suiteA.TestA2.testA2_6()'><b>testA2_6</b><br>Test class: suiteA.TestA2<br/>
-<a href="#Output-199449817" onClick='toggleBox("Output-199449817", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1149377174" onClick='toggleBox("Output-1149377174", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-199449817" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-199449817">
+<a href="#Output-1149377174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1149377174">
 Starting test ->testA2_6<br/>
 ----testA2_6 in method----<br/>
 Test Failed :->testA2_6<br/>
@@ -196,11 +252,11 @@ Failed Cause-->Forced to fail<br/>
 </div>
 </td>
 <td><div><pre>java.lang.AssertionError: Forced to fail
-	at suiteA.TestA2.testA2_6(TestA2.java:86)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199449817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace199449817'><pre>java.lang.AssertionError: Forced to fail
+	at suiteA.TestA2.testA2_6(TestA2.java:88)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1149377174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1149377174'><pre>java.lang.AssertionError: Forced to fail
 	at org.testng.Assert.fail(Assert.java:96)
-	at suiteA.TestA2.testA2_6(TestA2.java:86)
+	at suiteA.TestA2.testA2_6(TestA2.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -238,27 +294,12 @@ Failed Cause-->Forced to fail<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='suiteA.TestA2.testA2_5()'><b>testA2_5</b><br>Test class: suiteA.TestA2<br>Parameters: chrome, 1<br/>
-<a href="#Output-926434463" onClick='toggleBox("Output-926434463", this, "Show output", "Hide output");'>Show output</a>
+<td title='suiteA.TestA2.testA2_5()'><b>testA2_5</b><br>Test class: suiteA.TestA2<br/>
+<a href="#Output-1402433372" onClick='toggleBox("Output-1402433372", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-926434463" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-926434463">
+<a href="#Output-1402433372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402433372">
 Starting test ->testA2_5<br/>
-Browser: chrome / number: 1<br/>
-Test success :->testA2_5<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>suiteA.TestA2@4bec1f0c</td></tr>
-<tr>
-<td title='suiteA.TestA2.testA2_5()'><b>testA2_5</b><br>Test class: suiteA.TestA2<br>Parameters: ie, 2<br/>
-<a href="#Output-1768792843" onClick='toggleBox("Output-1768792843", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1768792843" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1768792843">
-Starting test ->testA2_5<br/>
-Browser: ie / number: 2<br/>
 Test success :->testA2_5<br/>
 </div>
 </td>
@@ -267,10 +308,10 @@ Test success :->testA2_5<br/>
 <td>suiteA.TestA2@4bec1f0c</td></tr>
 <tr>
 <td title='suiteA.TestA3.testA3_1()'><b>testA3_1</b><br>Test class: suiteA.TestA3<br/>
-<a href="#Output-6444850" onClick='toggleBox("Output-6444850", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1716093734" onClick='toggleBox("Output-1716093734", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-6444850" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-6444850">
+<a href="#Output-1716093734" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1716093734">
 Starting test ->testA3_1<br/>
 Test success :->testA3_1<br/>
 </div>
@@ -280,10 +321,10 @@ Test success :->testA3_1<br/>
 <td>suiteA.TestA3@29ca901e</td></tr>
 <tr>
 <td title='suiteA.TestA3.testA3_2()'><b>testA3_2</b><br>Test class: suiteA.TestA3<br/>
-<a href="#Output-837108062" onClick='toggleBox("Output-837108062", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-482052083" onClick='toggleBox("Output-482052083", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-837108062" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-837108062">
+<a href="#Output-482052083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-482052083">
 Starting test ->testA3_2<br/>
 Test success :->testA3_2<br/>
 </div>
@@ -293,10 +334,10 @@ Test success :->testA3_2<br/>
 <td>suiteA.TestA3@29ca901e</td></tr>
 <tr>
 <td title='suiteA.TestA3.testA3_3()'><b>testA3_3</b><br>Test class: suiteA.TestA3<br/>
-<a href="#Output-1720339" onClick='toggleBox("Output-1720339", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-812586739" onClick='toggleBox("Output-812586739", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1720339" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1720339">
+<a href="#Output-812586739" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-812586739">
 Starting test ->testA3_3<br/>
 Test success :->testA3_3<br/>
 </div>
@@ -306,10 +347,10 @@ Test success :->testA3_3<br/>
 <td>suiteA.TestA3@29ca901e</td></tr>
 <tr>
 <td title='suiteA.TestA3.testA3_4()'><b>testA3_4</b><br>Test class: suiteA.TestA3<br/>
-<a href="#Output-1810742349" onClick='toggleBox("Output-1810742349", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-13803304" onClick='toggleBox("Output-13803304", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1810742349" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1810742349">
+<a href="#Output-13803304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13803304">
 Starting test ->testA3_4<br/>
 Test success :->testA3_4<br/>
 </div>
@@ -319,10 +360,10 @@ Test success :->testA3_4<br/>
 <td>suiteA.TestA3@29ca901e</td></tr>
 <tr>
 <td title='suiteA.TestA3.testA3_5()'><b>testA3_5</b><br>Test class: suiteA.TestA3<br/>
-<a href="#Output-802243390" onClick='toggleBox("Output-802243390", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-890545344" onClick='toggleBox("Output-890545344", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-802243390" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-802243390">
+<a href="#Output-890545344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-890545344">
 Starting test ->testA3_5<br/>
 Test success :->testA3_5<br/>
 </div>
@@ -332,10 +373,10 @@ Test success :->testA3_5<br/>
 <td>suiteA.TestA3@29ca901e</td></tr>
 <tr>
 <td title='suiteA.TestA3.testA3_6()'><b>testA3_6</b><br>Test class: suiteA.TestA3<br/>
-<a href="#Output-556488341" onClick='toggleBox("Output-556488341", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1771667101" onClick='toggleBox("Output-1771667101", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-556488341" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-556488341">
+<a href="#Output-1771667101" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1771667101">
 Starting test ->testA3_6<br/>
 Test success :->testA3_6<br/>
 </div>

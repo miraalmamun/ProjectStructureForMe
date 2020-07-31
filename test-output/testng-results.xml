@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="35" total="46" passed="8">
+<testng-results skipped="0" failed="4" ignored="35" total="46" passed="7">
   <reporter-output>
     <line>
       <![CDATA[Starting test ->testA2_1]]>
+    </line>
+    <line>
+      <![CDATA[Broser Name: chrome and Number: 1]]>
+    </line>
+    <line>
+      <![CDATA[Title does not match]]>
+    </line>
+    <line>
+      <![CDATA[one line of code here]]>
+    </line>
+    <line>
+      <![CDATA[one line of code here]]>
+    </line>
+    <line>
+      <![CDATA[one line of code here]]>
+    </line>
+    <line>
+      <![CDATA[one line of code here]]>
+    </line>
+    <line>
+      <![CDATA[Expected value and Actual value same]]>
+    </line>
+    <line>
+      <![CDATA[Test Failed :->testA2_1]]>
+    </line>
+    <line>
+      <![CDATA[Failed Cause-->The following asserts failed:
+Title does not match]]>
+    </line>
+    <line>
+      <![CDATA[Starting test ->testA2_1]]>
+    </line>
+    <line>
+      <![CDATA[Broser Name: ie and Number: 2]]>
     </line>
     <line>
       <![CDATA[Title does not match]]>
@@ -58,18 +92,6 @@ This is a critical error]]>
       <![CDATA[Starting test ->testA2_5]]>
     </line>
     <line>
-      <![CDATA[Browser: chrome / number: 1]]>
-    </line>
-    <line>
-      <![CDATA[Test success :->testA2_5]]>
-    </line>
-    <line>
-      <![CDATA[Starting test ->testA2_5]]>
-    </line>
-    <line>
-      <![CDATA[Browser: ie / number: 2]]>
-    </line>
-    <line>
       <![CDATA[Test success :->testA2_5]]>
     </line>
     <line>
@@ -121,10 +143,10 @@ This is a critical error]]>
       <![CDATA[Test success :->testA3_6]]>
     </line>
   </reporter-output>
-  <suite name="CustomerAccount" duration-ms="1290" started-at="2020-07-30T23:33:06Z" finished-at="2020-07-30T23:33:07Z">
+  <suite name="CustomerAccount" duration-ms="1211" started-at="2020-07-31T03:52:49Z" finished-at="2020-07-31T03:52:50Z">
     <groups>
       <group name="browserGroup1">
-        <method signature="TestA2.testA2_1()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" class="suiteA.TestA2"/>
+        <method signature="TestA2.testA2_1(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" class="suiteA.TestA2"/>
         <method signature="TestA2.testA2_6()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_6" class="suiteA.TestA2"/>
         <method signature="TestA3.testA3_2()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_2" class="suiteA.TestA3"/>
         <method signature="TestA3.testA3_3()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_3" class="suiteA.TestA3"/>
@@ -134,13 +156,13 @@ This is a critical error]]>
       </group> <!-- browserGroup1 -->
       <group name="browserGroup2">
         <method signature="TestA2.testA2_2()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_2" class="suiteA.TestA2"/>
-        <method signature="TestA2.testA2_5(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" class="suiteA.TestA2"/>
+        <method signature="TestA2.testA2_5()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" class="suiteA.TestA2"/>
         <method signature="TestA3.testA3_1()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_1" class="suiteA.TestA3"/>
       </group> <!-- browserGroup2 -->
       <group name="smoke">
-        <method signature="TestA2.testA2_1()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" class="suiteA.TestA2"/>
+        <method signature="TestA2.testA2_1(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" class="suiteA.TestA2"/>
         <method signature="TestA2.testA2_2()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_2" class="suiteA.TestA2"/>
-        <method signature="TestA2.testA2_5(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" class="suiteA.TestA2"/>
+        <method signature="TestA2.testA2_5()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" class="suiteA.TestA2"/>
         <method signature="TestA2.testA2_6()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_6" class="suiteA.TestA2"/>
         <method signature="TestA3.testA3_1()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_1" class="suiteA.TestA3"/>
         <method signature="TestA3.testA3_2()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_2" class="suiteA.TestA3"/>
@@ -150,8 +172,8 @@ This is a critical error]]>
         <method signature="TestA3.testA3_6()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_6" class="suiteA.TestA3"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="TestA2.testA2_1()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" class="suiteA.TestA2"/>
-        <method signature="TestA2.testA2_5(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" class="suiteA.TestA2"/>
+        <method signature="TestA2.testA2_1(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" class="suiteA.TestA2"/>
+        <method signature="TestA2.testA2_5()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" class="suiteA.TestA2"/>
         <method signature="TestA3.testA3_1()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_1" class="suiteA.TestA3"/>
         <method signature="TestA3.testA3_2()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_2" class="suiteA.TestA3"/>
         <method signature="TestA3.testA3_3()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_3" class="suiteA.TestA3"/>
@@ -160,25 +182,37 @@ This is a critical error]]>
         <method signature="TestA3.testA3_6()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_6" class="suiteA.TestA3"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="TestA2-3" duration-ms="1199" started-at="2020-07-30T23:33:06Z" finished-at="2020-07-30T23:33:07Z">
+    <test name="TestA2-3" duration-ms="1100" started-at="2020-07-31T03:52:49Z" finished-at="2020-07-31T03:52:50Z">
       <class name="suiteA.TestA2">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="256" started-at="2020-07-30T23:33:06Z" finished-at="2020-07-30T23:33:06Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="246" started-at="2020-07-31T03:52:49Z" finished-at="2020-07-31T03:52:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testA2_1 status=FAILURE method=TestA2.testA2_1()[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_1]]]>
+                <![CDATA[[TestResult name=testA2_1 status=FAILURE method=TestA2.testA2_1(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_1]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testA2_1()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" duration-ms="17" started-at="2020-07-30T23:33:06Z" finished-at="2020-07-30T23:33:06Z">
+        <test-method status="FAIL" signature="testA2_1(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" duration-ms="16" started-at="2020-07-31T03:52:49Z" data-provider="getDataSuiteA2" finished-at="2020-07-31T03:52:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -188,7 +222,7 @@ Title does not match]]>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
 Title does not match
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at suiteA.TestA2.testA2_1(TestA2.java:33)
+at suiteA.TestA2.testA2_1(TestA2.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -222,6 +256,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[Starting test ->testA2_1]]>
             </line>
             <line>
+              <![CDATA[Broser Name: chrome and Number: 1]]>
+            </line>
+            <line>
               <![CDATA[Title does not match]]>
             </line>
             <line>
@@ -248,11 +285,116 @@ Title does not match]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA2_1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="500" started-at="2020-07-30T23:33:06Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="490" started-at="2020-07-31T03:52:49Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA2_1 status=FAILURE method=TestA2.testA2_1(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_1]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testA2_1(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_1" duration-ms="5" started-at="2020-07-31T03:52:50Z" data-provider="getDataSuiteA2" finished-at="2020-07-31T03:52:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Title does not match]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Title does not match
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at suiteA.TestA2.testA2_1(TestA2.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test ->testA2_1]]>
+            </line>
+            <line>
+              <![CDATA[Broser Name: ie and Number: 2]]>
+            </line>
+            <line>
+              <![CDATA[Title does not match]]>
+            </line>
+            <line>
+              <![CDATA[one line of code here]]>
+            </line>
+            <line>
+              <![CDATA[one line of code here]]>
+            </line>
+            <line>
+              <![CDATA[one line of code here]]>
+            </line>
+            <line>
+              <![CDATA[one line of code here]]>
+            </line>
+            <line>
+              <![CDATA[Expected value and Actual value same]]>
+            </line>
+            <line>
+              <![CDATA[Test Failed :->testA2_1]]>
+            </line>
+            <line>
+              <![CDATA[Failed Cause-->The following asserts failed:
+Title does not match]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA2_1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="19" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <params>
             <param index="0">
               <value>
@@ -261,14 +403,14 @@ Title does not match]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testA2_2()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_2" duration-ms="3" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="FAIL" signature="testA2_2()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_2" duration-ms="6" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -278,8 +420,8 @@ This is a critical error]]>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
 This is a critical error
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at testbase.TestBase2.failAndStopTest(TestBase2.java:160)
-at suiteA.TestA2.testA2_2(TestA2.java:46)
+at testbase.TestBase2.failAndStopTest(TestBase2.java:100)
+at suiteA.TestA2.testA2_2(TestA2.java:48)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -336,117 +478,41 @@ This is a critical error]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA2_2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="23" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="24" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA2_5 status=SUCCESS method=TestA2.testA2_5(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_5]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA2_5(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" duration-ms="4" started-at="2020-07-30T23:33:07Z" data-provider="TestA2" finished-at="2020-07-30T23:33:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="testA2_5()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" duration-ms="3" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
             <line>
               <![CDATA[Starting test ->testA2_5]]>
-            </line>
-            <line>
-              <![CDATA[Browser: chrome / number: 1]]>
             </line>
             <line>
               <![CDATA[Test success :->testA2_5]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA2_5 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="24" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testA2_5 status=SUCCESS method=TestA2.testA2_5(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_5]]]>
+                <![CDATA[[TestResult name=testA2_5 status=SUCCESS method=TestA2.testA2_5()[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_5]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA2_5(java.lang.String, int)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_5" duration-ms="3" started-at="2020-07-30T23:33:07Z" data-provider="TestA2" finished-at="2020-07-30T23:33:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Starting test ->testA2_5]]>
-            </line>
-            <line>
-              <![CDATA[Browser: ie / number: 2]]>
-            </line>
-            <line>
-              <![CDATA[Test success :->testA2_5]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA2_5 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="11" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="14" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA2_6 status=FAILURE method=TestA2.testA2_6()[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_6]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="testA2_6()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_6" duration-ms="2" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="FAIL" signature="testA2_6()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="testA2_6" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Forced to fail]]>
@@ -454,7 +520,7 @@ This is a critical error]]>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Forced to fail
 at org.testng.Assert.fail(Assert.java:96)
-at suiteA.TestA2.testA2_6(TestA2.java:86)
+at suiteA.TestA2.testA2_6(TestA2.java:88)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -498,13 +564,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA2_6 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="17" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA2_6 status=FAILURE method=TestA2.testA2_6()[pri:0, instance:suiteA.TestA2@4bec1f0c] output=Starting test ->testA2_6]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA2@4bec1f0c]" name="afterMethod" is-config="true" duration-ms="21" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- suiteA.TestA2 -->
       <class name="suiteA.TestA3">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <params>
             <param index="0">
               <value>
@@ -513,14 +595,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA3_1()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_1" duration-ms="2" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="testA3_1()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_1" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
             <line>
               <![CDATA[Starting test ->testA3_1]]>
@@ -530,27 +612,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA3_1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="80" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="20" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA3_2 status=SUCCESS method=TestA3.testA3_2()[pri:0, instance:suiteA.TestA3@29ca901e] output=Starting test ->testA3_2]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA3_2()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_2" duration-ms="2" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="testA3_2()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_2" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
             <line>
               <![CDATA[Starting test ->testA3_2]]>
@@ -560,11 +626,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA3_2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="13" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA3_2 status=SUCCESS method=TestA3.testA3_2()[pri:0, instance:suiteA.TestA3@29ca901e] output=Starting test ->testA3_2]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="17" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <params>
             <param index="0">
               <value>
@@ -573,14 +655,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA3_3()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_3" duration-ms="2" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="testA3_3()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_3" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
             <line>
               <![CDATA[Starting test ->testA3_3]]>
@@ -590,11 +672,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA3_3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="23" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="23" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <params>
             <param index="0">
               <value>
@@ -603,14 +685,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA3_4()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_4" duration-ms="5" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="testA3_4()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_4" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
             <line>
               <![CDATA[Starting test ->testA3_4]]>
@@ -620,11 +702,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA3_4 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="28" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="19" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <params>
             <param index="0">
               <value>
@@ -633,14 +715,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA3_5()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_5" duration-ms="3" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="testA3_5()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_5" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
             <line>
               <![CDATA[Starting test ->testA3_5]]>
@@ -650,11 +732,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA3_5 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="44" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="25" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:suiteA.TestA3@29ca901e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <params>
             <param index="0">
               <value>
@@ -663,14 +745,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fa49800]]>
+                <![CDATA[org.testng.TestRunner@2a54a73f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testA3_6()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_6" duration-ms="3" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="testA3_6()[pri:0, instance:suiteA.TestA3@29ca901e]" name="testA3_6" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
             <line>
               <![CDATA[Starting test ->testA3_6]]>
@@ -680,17 +762,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA3_6 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="25" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:suiteA.TestA3@29ca901e]" name="afterMethod" is-config="true" duration-ms="21" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- suiteA.TestA3 -->
     </test> <!-- TestA2-3 -->
-    <test name="TestA4-5" duration-ms="2" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+    <test name="TestA4-5" duration-ms="1" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
     </test> <!-- TestA4-5 -->
-    <test name="TestAA2-3" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+    <test name="TestAA2-3" duration-ms="2" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
     </test> <!-- TestAA2-3 -->
-    <test name="TestAA4-5" duration-ms="1" started-at="2020-07-30T23:33:07Z" finished-at="2020-07-30T23:33:07Z">
+    <test name="TestAA4-5" duration-ms="1" started-at="2020-07-31T03:52:50Z" finished-at="2020-07-31T03:52:50Z">
     </test> <!-- TestAA4-5 -->
   </suite> <!-- CustomerAccount -->
 </testng-results>

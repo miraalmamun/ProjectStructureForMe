@@ -11,9 +11,11 @@ import testbase.TestBase2;
 //@Test(groups = {"TestA2"})
 public class TestA2 extends TestBase2 {
 
-	@Test(groups = {"smoke","sanity","browserGroup1"})
-	public void testA2_1() {
-
+	@Test(groups = {"smoke","sanity","browserGroup1"},dataProviderClass =TestDataProvider2.class,dataProvider = "getDataSuiteA2" )
+	public void testA2_1(String browser, int number) {
+       
+		logInfo("Broser Name: "+browser+" "+"and Number: "+number);
+		
 		String expected = "Mir";
 		if (!expected.equals("Mir2")) {
 			softAssert("Title does not match");
@@ -69,10 +71,10 @@ public class TestA2 extends TestBase2 {
 	
 	
 
-	@Test(groups = {"smoke","sanity","browserGroup2"},dataProviderClass = TestDataProvider2.class,dataProvider = "TestA2")
-	public void testA2_5(String browser, int number) {
+	@Test(groups = {"smoke","sanity","browserGroup2"})
+	public void testA2_5() {
 
-		logInfo("Browser: "+browser+" / number: "+ number);
+		
 	}
 
 	
