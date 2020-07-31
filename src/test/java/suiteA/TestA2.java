@@ -1,48 +1,90 @@
 package suiteA;
 
-import org.testng.Reporter;
-import org.testng.annotations.Listeners;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import dataProvider.TestDataProvider2;
 import testbase.TestBase2;
 
-@Listeners(listener.CustomListener2.class)
+//@Listeners(listener.CustomListener2.class)
+
+//@Test(groups = {"TestA2"})
 public class TestA2 extends TestBase2 {
 
-	@Test()
+	@Test(groups = {"smoke","sanity","browserGroup1"})
 	public void testA2_1() {
 
-		Reporter.log("----testA2_1 in method----", true);
+		String expected = "Mir";
+		if (!expected.equals("Mir2")) {
+			softAssert("Title does not match");
+		} else {
+			logInfo("Title matches");
+		}
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+		if (!expected.equals("Mir")) {
+			softAssert("Expected value and Actual value does not same");
+		} else {
+			logInfo("Expected value and Actual value same");
+		}
+
+		softAssert.assertAll();
 	}
 
-	@Test()
+	@Test(groups = {"smoke","browserGroup2"})
 	public void testA2_2() {
+		String expected = "Mir";
 
-		Reporter.log("----testA2_2 in method----", true);
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+
+		if (!expected.equals("Mir2")) {
+			failAndStopTest("This is a critical error");
+		} else {
+			logInfo("Both value same");
+		}
+
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+		logInfo("one line of code here");
+
 	}
 
-	@Test()
+	@Test(groups = {"sanity","browserGroup1"})
 	public void testA2_3() {
 
-		Reporter.log("----testA2_3 in method----", true);
+		logInfo("----testA2_3 in method----");
 	}
 
-	@Test()
+	@Test(groups = {"sanity","browserGroup1"})
 	public void testA2_4() {
 
-		Reporter.log("----testA2_4 in method----", true);
+		logInfo("----testA2_4 in method----");
+	}
+	
+	
+	
+
+	@Test(groups = {"smoke","sanity","browserGroup2"},dataProviderClass = TestDataProvider2.class,dataProvider = "TestA2")
+	public void testA2_5(String browser, int number) {
+
+		logInfo("Browser: "+browser+" / number: "+ number);
 	}
 
-	@Test()
-	public void testA2_5() {
-
-		Reporter.log("----testA2_5 in method----", true);
-	}
-
-	@Test()
+	
+	
+	
+	
+	@Test(groups = {"smoke","browserGroup1"})
 	public void testA2_6() {
 
-		Reporter.log("----testA2_6 in method----", true);
+		logInfo("----testA2_6 in method----");
+		Assert.fail("Forced to fail");
+
 	}
 
 }

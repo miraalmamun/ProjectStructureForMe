@@ -57,12 +57,12 @@ public class TestBase {
 
 	public void logFailure(String msg) {// only fails in extent reports
 		test.log(Status.FAIL, msg);
-		Reporter.log(msg, true);
+		//Reporter.log(msg, true);
 	}
 
 	public void logSkipped(String msg) {
 		test.log(Status.SKIP, msg);
-		Reporter.log(msg, true);
+		//Reporter.log(msg, true);
 	}
 
 	public void failAndStopTest(String msg) {// fail in testng as well as extent - but stop

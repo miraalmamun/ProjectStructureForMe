@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="CustomerAccount">
+
+	<groups>
+		<run>
+			<include name="smoke" />
+		</run>
+	</groups>
+
+
 	<listeners>
 		<listener class-name="listener.CustomListener2" />
 	</listeners>
+
+    <parameter name="browsers" value="chrome,ie" />
+    <parameter name="browserGroup1" value="safari" />
+    <parameter name="browserGroup2" value="mozila" />
 
 
 	<test name="TestA2-3">
